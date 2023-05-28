@@ -29,15 +29,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String buttonText = followBtn.getText().toString();
-                if(!User.followed)
+                if(!User.Followed)
                 {
                     followBtn.setText("Unfollow");
-                    User.followed = true;
+                    User.Followed = true;
                     Toast.makeText(getApplicationContext(), "Followed", Toast.LENGTH_SHORT).show();
                 }
                 else {
                     followBtn.setText("Follow");
-                    User.followed = false;
+                    User.Followed = false;
                     Toast.makeText(getApplicationContext(), "Unfollowed", Toast.LENGTH_SHORT).show();
                 }
             }
